@@ -1,8 +1,8 @@
 import numpy as np
 import cv2 as cv
 
-detector_faces = cv.CascadeClassifier('/home/surfista/Downloads/opencv-master/data/haarcascades/haarcascade_frontalface_default.xml')
-detector_olhos = cv.CascadeClassifier('/home/surfista/Downloads/opencv-master/data/haarcascades/haarcascade_eye.xml')
+detector_faces = cv.CascadeClassifier('opencv-master/data/haarcascades/haarcascade_frontalface_default.xml')
+detector_olhos = cv.CascadeClassifier('opencv-master/data/haarcascades/haarcascade_eye.xml')
 image = cv.imread('teste.jpeg')
 image_cinza = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
 
